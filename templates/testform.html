@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block main_content %}
+<p>Click to <a href="{{ url_for('index') }}">return to the home page</a>.</p>
+
+<h1>Skill Set Survey</h1>
+
+<div class = 'center'> Hi Hi Hi! <br>
+    It's time we get to know how everyone is doing with this class and their former experience.<br>
+    So it's not too late for the drop period... JKJK <br>
+It's already too late! </div>
+
+<form method="post" action="{{url_for('formecho')}}">
+<p><label>Name:</label></p>
+    <input required type="text" name="user" size="50" placeholder="Use any name you want">
+
+
+<p id = 'hint'>Need inspiration for name? Click <a href="{{ url_for('greet') }}">here</a>.</p>
+
+<p><label>What is your graduation year?</label></p>
+    <select name = 'gradyear' required>
+        <option value="">select</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="other">other</option>
+    </select>
+
+
+
+<p><label>Please select the languages you already knew:</label></p>
+<fieldset><legend>Languages</legend>
+    <label>
+        <input type="checkbox" name="language" value="py">
+        Python
+    </label>
+    <label>
+        <input type="checkbox" name="language" value="C">
+        C
+    </label>
+    <label>
+        <input type="checkbox" name="language" value="C++">
+        C++
+    </label>
+    <label>
+        <input type="checkbox" name="language" value="Java">
+        Java
+    </label>
+    <label>
+        <input type="checkbox" name="language" value="JS">
+        JavaScript
+    </label>
+    <label>
+        <input type="checkbox" name="language" value="HTML">
+        HTML
+    </label>
+
+    <label>
+        <input type="checkbox" name="language" value="R">
+        R
+    </label>
+    <label>
+        <input type="checkbox" name="language" value="Go">
+        GoLang
+    </label>
+
+    <label>
+        <input type="checkbox" name="language" value="Ruby">
+        Ruby
+    </label>
+
+    <label> 
+        Other: <input type = 'text' name = 'language' placeholder='Wow'>
+    </label>
+    </fieldset>
+
+
+
+<p><label>Feedback:</label></p>
+    <textarea name="Feedback" rows="3" cols="50" placeholder="Is there anything you want to say about CS304?"></textarea>
+
+<p><input type="submit" value="submit survey">
+</form>
+
+{% endblock %}

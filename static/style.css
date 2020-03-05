@@ -1,0 +1,112 @@
+/* For flashed messages; make them stand out using red and italics */
+
+#messages {
+    color: magenta ;
+    font-style: italic;
+}
+
+
+input[type=submit]{
+    background-color:  #ae00ff;
+    border: none;
+    color:white;
+    padding: 16px 20px;
+    /* text-decoration: yellow; */
+    font-size: medium;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+h1{
+    font-size: 300%;
+    text-align: center;
+    color: lightseagreen;
+}
+
+.center{
+    text-align: center;
+    color: darkblue;
+}
+
+.para1 {
+    text-align: center;
+    color:maroon;
+}
+
+#question{
+    text-align: justify;
+    font-size: large;
+    color: navy
+
+}
+
+div {
+    background-color: ghostwhite;
+    width: 60%;
+    border: 10px solid aqua;
+    padding: 30px;
+    margin: auto;
+    
+}
+
+/* input[type=submit]{
+    background-color:  #ae00ff;
+    border: none;
+    color:white;
+    padding: 16px 20px;
+    /* text-decoration: yellow; */
+    /* font-size: medium;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+
+} */ 
+
+#hint{
+    font-size: smaller;
+    color: navy;
+}
+
+fieldset{
+    border: 3px solid #00baff;
+    width: 90%;
+}
+
+#iconlist {
+margin: auto;
+width: 60%;
+border:none;
+background: none;
+/* display: inline; */
+}
+
+#li1{
+margin-left : 5%;
+border:none;
+background: none;
+display: inline;
+}
+#li2{
+margin-left : 5%;
+border:none;
+background: none;
+display: inline;
+
+}
+#li3{
+margin-left : 5%;
+border:none;
+background: none;
+display: inline;
+}
+#li4{
+margin-left : 5%;
+border:none;
+background: none;
+display: inline;
+
+}
+
+

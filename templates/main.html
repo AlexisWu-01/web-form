@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+<h1>Welcome to My Page!</h1>
+
+<div class = 'center'> Hi Hi Hi! <br>
+    I'm Alexis! Welcome to the first page I've ever created!<br>
+    This is a practice homework for CS304. </div>
+
+<p class = 'para1'>Need some suggestions for a new name? Visit this <a href="{{ url_for('greet') }}">newname</a> page.</p>
+
+<p class = 'para1'>To complete survey, fill out the form  <a href="{{ url_for('testform') }}">here</a>.</p>
+
+
+
+<footer>
+    <div id="iconlist">
+    <div id='li1'>
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/1.0/"><img
+           alt="Creative Commons License" 
+           src="https://cs.wellesley.edu/~cs304/static/icons/somerights.gif"></a>
+           <!-- /Creative Commons License -->
+      </div>
+    
+    <div id='li2'>
+      <a href="https://www.anybrowser.org/campaign/"><img
+           src="https://cs.wellesley.edu/~cs304/static/icons/enhanced.gif" 
+           width="96" height="32" 
+           alt="Viewable With Any Browser"></a>
+      </div>
+    
+    <div id='li3'>
+      <a href="https://validator.w3.org/check?uri=referer"><img 
+           src="https://cs.wellesley.edu/~cs304/static/icons/valid-html5v2.png"
+           alt="Valid HTML5"
+           title="Valid HTML5"  
+           height="31" width="88"></a> 
+      </div>
+    
+    <div id = 'li4'>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer"><img 
+          style="border:0;width:88px;height:31px"
+          src="https://cs.wellesley.edu/~cs304/static/icons/vcss.gif"
+          alt="Valid CSS!"></a>
+      </div>
+    
+    </div>
+    </footer>
+
+{% endblock %}

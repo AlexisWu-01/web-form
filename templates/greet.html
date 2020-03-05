@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<p>Click to <a href="{{ url_for('index') }}">return to the main page</a>.</p>
+
+<h1>ARE U SURE? {{name}}?</h1>
+
+<form method="post" action= '#'>
+   <p id = 'question'>What name do you want to shuffle? <input required type="text" name="username" placeholder = 'name'></p>
+    <input type="submit" value = 'GO!'>
+</form>
+
+{% endblock %}
